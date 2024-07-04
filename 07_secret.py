@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+from pprint import pprint
 # есть зашифрованное сообщение
 
 secret_message = [
@@ -21,4 +21,7 @@ secret_message = [
 # Требуется задать конкретные индексы, например secret_message[3][12:23:4]
 # Если нужны вычисления и разные пробы - делайте это в консоли пайтона, тут нужен только результат
 
-# TODO вывести расшифрованное сообщение
+decrypted_message = secret_message[0][3] + ' ' + secret_message[1][9:13] + ' ' + secret_message[2][5:14:2] + ' ' + secret_message[3][-20:-25] + ' ' + secret_message[4][-12:-16]
+#decrypted_message = secret_message[0][3] + ' ' + secret_message[1][9:13] + ' ' + secret_message[2][5:14:2] + ' ' + secret_message[3][7:12:-1] + ' ' + secret_message[4][16:20:-1]
+
+pprint(decrypted_message)
